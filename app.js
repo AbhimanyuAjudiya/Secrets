@@ -115,7 +115,7 @@ app.get("/submit", function(req, res){
 app.post("/submit", function(req, res){
   const submittedSecret = req.body.secret;
 
-//Once the user is authenticated and their session gets saved, their user details are saved to req.user.
+//Once the user is authenticated and their session gets saved, their user details are saved to req.user
     
   User.findById(req.user.id, function(err, foundUser){
     if (err) {
